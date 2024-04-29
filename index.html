@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-445NB4SCL6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-445NB4SCL6');
+    </script>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natpreya's Portfolio</title>
@@ -151,6 +161,10 @@
             object-fit: cover;
         }
 
+        .text-container {
+            min-height: 200px;
+        }
+
 
         #contact-section {
             background-color: var(--main-color-3);
@@ -185,13 +199,13 @@
             text-decoration: none;
             color: var(--main-color-1);
         }
-        
+
     </style>
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <section>
+    <!-- Navigation bar offcanvas-->
+    <!-- <section>
         <nav class="navbar navbar-expand-sm fixed-top rounded" id="nav-style">
             <div class="container-fluid">
                 <a href="#home-landing"
@@ -229,7 +243,41 @@
                 </div>
             </div>
         </nav>
+    </section> -->
+
+<!-- Navigation bar collapse -->
+    <section>
+        <nav class="navbar navbar-expand-md fixed-top" id="nav-style">
+            <div class="container">
+                <a href="#home-landing" class="brand-style d-flex align-items-center px-3 link-body-emphasis text-decoration-none">
+                    <img class="bi me-2" src="./image/MyPort Logo/1.svg" width="40" height="40" />
+                    's Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse show justify-content-end" id="navbarCollapse">
+                    <ul class="navbar-nav my-1 my-md-0">
+                        <li class="nav-item px-1">
+                            <a href="#work-section" class="nav-link ps-3">My works</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#hobbies-section" class="nav-link  ps-3">Hobbies</a>
+                        </li>
+                        <li class="nav-item px-1">
+                            <a href="#contact-section" class="nav-link  ps-3">Contact</a>
+                        </li>
+                    </ul>
+                    
+        
+                </div>
+
+            </div>
+        </nav>
+
     </section>
+
 
     <!-- Landing area -->
 
@@ -295,8 +343,8 @@
                                                 <img class="img-size rounded" src="./image/MyWorks/NewUI.png">
                                             </div>
                                         </div>
-                                        <div class="col-md-5 mt-5 pb-5">
-                                            <div class="text-start color-main-4">
+                                        <div class="col-md-5 mt-5">
+                                            <div class="text-start color-main-4 text-container">
                                                 <h3>Mobile banking design change</h3>
                                                 <p>Led in updated the overall user interface of the mobile banking app,
                                                     introducing a new theme and style
@@ -315,8 +363,8 @@
                                                     src="./image/MyWorks/BeSmartOnMobile.png">
                                             </div>
                                         </div>
-                                        <div class="col-md-5 mt-5 pb-5">
-                                            <div class="text-start color-main-4">
+                                        <div class="col-md-5 mt-5">
+                                            <div class="text-start color-main-4 text-container">
                                                 <h3>Apply credit card installment on mobile banking</h3>
                                                 <p>Implemented BeSmart feature on mobile banking. Customer can apply
                                                     installment on their credit card transaction.
@@ -336,7 +384,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-5 mt-5">
-                                            <div class="text-start color-main-4">
+                                            <div class="text-start color-main-4 text-container">
                                                 <h3>Direct debit registration feature (application to application)</h3>
                                                 <p>Collaborated with bank partners to develop mobile banking features,
                                                     direct debit registration, enabling customers to
